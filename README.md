@@ -6,3 +6,4 @@
 6. Add react libraries in react_simple.libraries.yml file.
 7. Load react libraries in node.html.twig file.
 8. View the node on the browser. See that react is loaded.
+9. Create 2 components in js file to show or hide content from a node.
