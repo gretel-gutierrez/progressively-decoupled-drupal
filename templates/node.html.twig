@@ -109,7 +109,10 @@
         React app will load here.
     </div>
     <hr />
-    {{ content }}
+    {#Address the node with the React code#}
+    <div id="react-content" class="invisible" data-title="{{ node.label }}">
+      {{ content }}
+    </div>
   </div>
 
 </article>
