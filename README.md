@@ -1,3 +1,5 @@
+**Button to show or hide node content using React**
+
 1. Enable the theme React -- Simple Hello World.
 2. Override the node template, on templates folder.
 3. Add a code to load react app. <div id="react-app"><div>
