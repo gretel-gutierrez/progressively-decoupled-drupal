@@ -1,3 +1,5 @@
+**Use react to list content from Drupal**
+
 1. Enable the theme React -- Simple Hello World.
 2. Add react libraries in react_simple.libraries.yml file.
 3. Use a preprocess function to pass the title and the nid to the template.
