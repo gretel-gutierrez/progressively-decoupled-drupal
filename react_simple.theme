@@ -4,3 +4,22 @@
  * @file
  * Functions to support theming in the React theme.
  */
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function react_simple_page_attachments_alter(array &$page) {
+  $account = \Drupal::currentUser();
+  if ($account->isAuthenticated()) {
+    // First we attach our asset library to the page.
+    $page['#attached']['library'][] = 'react_simple/global-scripts';
+    // Then we pass along our dynamic value.
+    // This will then be available in our JavaScript as drupalSettings.friendly.name.
+    $page['#attached']['drupalSettings']['friendly']['name'] = $account->getDisplayName();
+
+    // Image
+    $staticLogoAsset = file_create_url(drupal_get_path('theme', 'react_simple') . '/app/build/logo192.png');
+    $page['#attached']['drupalSettings']['friendly']['staticLogoAsset'] = $staticLogoAsset;
+
+  }
+}

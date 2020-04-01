@@ -23,3 +23,10 @@ react-app:
     app/build/static/js/main.drupal.chunk.js: { preprocess: 0, minified: true }
     app/build/static/js/2.drupal.chunk.js: { preprocess: 0, minified: true }
     app/build/static/js/runtime-main.drupal.js: { preprocess: 0, minified: true }
+
+global-scripts:
+  version: 1.x
+  js:
+    friendly/friendly-script.js: {}
+  dependencies:
+    - core/drupalSettings
