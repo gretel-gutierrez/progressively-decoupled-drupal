@@ -8,9 +8,18 @@ react:
     https://unpkg.com/react@16/umd/react.production.min.js: { external: true, minified: true }
     https://unpkg.com/react-dom@16/umd/react-dom.production.min.js: { external: true, minified: true }
     https://unpkg.com/babel-standalone@6.26.0/babel.min.js: { external: true, minified: true }
+
+# Add builded css and js files
 react-app:
   version: 1.0.0
   footer: true
+  css:
+    layout:
+      app/build/static/css/main.drupal.chunk.css: {}
+      https://fonts.googleapis.com/css?family=Roboto:300,400,500: { external: true }
   js:
     # The script will be processed by the Babel script
-    js/index.js: { preprocess: 0, attributes: { type: text/babel } }
+    app/src/index.js: { preprocess: 0, attributes: { type: text/babel } }
+    app/build/static/js/main.drupal.chunk.js: { preprocess: 0, minified: true }
+    app/build/static/js/2.drupal.chunk.js: { preprocess: 0, minified: true }
+    app/build/static/js/runtime-main.drupal.js: { preprocess: 0, minified: true }
