@@ -18,5 +18,11 @@
 15. Set homepage attribute in package.json to load the application correctly
 16. View any node on the browser and test add, edit and delete.
 
+**How to tell React where to find static assets**
+1. Create and add a script in the theme
+2. Add the library in react_simple.info.yml file
+3. Add the library and dependencies in react_simple.libraries.yml file
+4. Add PHP code to generate a complete path to a static asset in react_simple.theme
+5. In js file make use of the new variable in the JavaScript of the asset library
 
 https://your-site.com/es/admin/config/services/jsonapi select all operations
