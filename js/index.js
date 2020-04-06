@@ -31,7 +31,7 @@ class NodeList extends React.Component {
 
   loadNodeData() {
     // Point to local Drupal instance.
-    const API_ROOT = 'https://my-drupal8-site.ddev.site:8300/jsonapi/';
+    const API_ROOT = 'https://my-drupal8-site.ddev.site/jsonapi/';
     const url = `${API_ROOT}node/article`;
 
     // Retrieve data from Drupal's API and sends it to updateData()
