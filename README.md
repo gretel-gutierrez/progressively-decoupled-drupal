@@ -26,3 +26,6 @@
 5. In js file make use of the new variable in the JavaScript of the asset library
 
 https://your-site.com/es/admin/config/services/jsonapi select all operations
+
+**To see this example working**
+1. Search for https://my-drupal8-site.ddev.site/ and replace it with your site

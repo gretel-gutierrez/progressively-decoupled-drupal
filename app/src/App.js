@@ -5,7 +5,7 @@ import './App.css';
 
 // Create a config setting
 const config =  {
-  base: 'https://my-drupal8-site.ddev.site:8300',
+  base: 'https://my-drupal8-site.ddev.site/',
 };
 
 const JSONAPI_ROOT = `${config.base}/jsonapi/`;

@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "0.1.0",
-  "homepage": "https://my-drupal8-site.ddev.site:8300/themes/react_simple/app/build",
+  "homepage": "https://my-drupal8-site.ddev.site/themes/react_simple/app/build",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -13,10 +13,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build-rename": "npm run build && for i in ./build/static/*/*; do cp $i `echo $i | sed -E \"s/\\.[0-9a-z]{8}\\./\\.drupal\\./g\"`; done"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
