@@ -9,3 +9,7 @@
 7. Create some Articles.
 8. Create a custom react script in js folder.
 9. View any node on the browser. See that react is loaded.
+
+**To see this example working**
+
+1. Search for https://my-drupal8-site.ddev.site/ and replace it with your site
